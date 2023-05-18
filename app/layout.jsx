@@ -5,6 +5,7 @@ import Provider from "@components/Provider";
 export const metadata = {
   title: "Promptoia",
   description: "Discover & Share AI Prompts",
+  keywords:"development, api"  
 };
 
 const RootLayout = ({ children }) => {

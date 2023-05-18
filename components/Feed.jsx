@@ -43,11 +43,11 @@ const Feed = () => {
     return allPosts.filter((item) => item.tag === tag);
   };
 
-  const handleSearchChange = (e) => {
-    clearTimeout(searchTimeout);
+  const handleSearchChange = (e) => {    
+    clearTimeout(searchTimeout);    
     setSearchText(e.target.value);
     setSearchTimeout(
-      setTimeout(() => {
+       setTimeout(() => {        
         setSearchResult(filterPostsByWords(e.target.value));
       }, 500)
     );
